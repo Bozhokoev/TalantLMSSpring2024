@@ -15,7 +15,7 @@ public class BaseUITest {
     protected static final String HEIMDALL_ENDPOINT = ":8443";
 
 
-
+//asd
 
     @BeforeSuite(alwaysRun = true)
     public void configurationSetUp() {
