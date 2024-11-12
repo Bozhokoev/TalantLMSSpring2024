@@ -1,0 +1,16 @@
+version: '3'
+services:
+  selenium:
+    image: selenium/standalone-chrome:latest
+    ports:
+      - "4444:4444"
+      - "7900:7900"
+    shm_size: 2g
+    networks:
+      - static-network
+
+networks:
+  static-network:
+    ipam:
+      config:
+        - subnet: 192.21.0.0/16

@@ -1,12 +1,14 @@
 package ui_tests;
 
 import com.codeborne.selenide.Selenide;
+import driver_utils.Driver;
 import lombok.extern.slf4j.Slf4j;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeSuite;
 
 import static com.codeborne.selenide.Configuration.*;
 import static com.codeborne.selenide.Configuration.holdBrowserOpen;
+import static config_reader.ConfigurationManager.getConfig;
 
 @Slf4j
 
